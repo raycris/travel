@@ -16,8 +16,8 @@ function App() {
       <div id="tab_bar"></div>
       <section className="w-full h-screen">
         <Home id="home" />
-        {/* <Recommended id="recommended" />
-        <PopularRents id="pupular_rents" /> */}
+        <Recommended id="recommended" />
+        <PopularRents id="pupular_rents" />
       </section>
       {/* <Footer /> */}
     </div>

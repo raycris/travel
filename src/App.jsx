@@ -1,15 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+
+import Home from "./components/Home";
+import Recommended from "./components/Recommended";
+import PopularRents from "./components/PopularRenst";
+// import Footer from "./components/Footer";
+
+
 
 function App() {
-  const [count, setCount] = useState(0);
+ 
 
   return (
-    <>
-      <h1 className="font-Montserrat text-xl">Hello world!</h1>
-      <div className="w-8 h-8 bg-purple">padre tiempo</div>
-    </>
+    <div>
+      <nav></nav>
+      <div id="tab_bar"></div>
+      <section className="w-full h-screen">
+        <Home id="home" />
+        <Recommended id="recommended" />
+        <PopularRents id="pupular_rents" />
+      </section>
+      {/* <Footer /> */}
+    </div>
   );
 }
 

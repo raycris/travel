@@ -9,7 +9,7 @@ const Recommended = ({ id }) => {
   return (
     <div className="p-6" id={id}>
       <p className="text-3xl font-semibold text-primary">Recommended</p>
-      <div className="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+      <div className="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
         <div className="Card">
           <div className="w-full h-auto rounded-t-lg new_york bg-cover">
             <picture>

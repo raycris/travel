@@ -5,13 +5,9 @@ import Recommended from "./components/Recommended";
 import PopularRents from "./components/PopularRenst";
 // import Footer from "./components/Footer";
 
-
-
 function App() {
- 
-
   return (
-    <div>
+    <div className="font-Montserrat">
       <nav></nav>
       <div id="tab_bar"></div>
       <section className="w-full h-screen">

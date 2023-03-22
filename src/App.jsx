@@ -3,7 +3,7 @@ import { useState } from "react";
 import Home from "./components/Home";
 import Recommended from "./components/Recommended";
 import PopularRents from "./components/PopularRenst";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
         <Home id="home" />
         <Recommended id="recommended" />
         <PopularRents id="pupular_rents" />
+      <Footer />
       </section>
-      {/* <Footer /> */}
     </div>
   );
 }

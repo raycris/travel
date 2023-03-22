@@ -4,17 +4,27 @@ import Home from "./components/Home";
 import Recommended from "./components/Recommended";
 import PopularRents from "./components/PopularRenst";
 import Footer from "./components/Footer";
+import TabBar from "./components/TabBar";
+import FAQ from "./components/FAQ";
+
 
 function App() {
   return (
     <div className="font-Montserrat">
       <nav></nav>
-      <div id="tab_bar"></div>
+
       <section className="w-full h-screen">
         <Home id="home" />
         <Recommended id="recommended" />
         <PopularRents id="pupular_rents" />
-      <Footer />
+        <FAQ/>
+        <Footer />
+        <TabBar
+          id="tab_bar"
+          homeId="home"
+          popularRentsId="pupular_rents"
+          recommendedId="recommended"
+        />
       </section>
     </div>
   );

@@ -22,6 +22,7 @@ module.exports = {
       bermuda: "#78dcca",
       gray: {
         50: "#f9fafb",
+        200: "#e5e7eb",
         300: "#d1d5db",
       },
     },

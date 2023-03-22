@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
@@ -19,25 +20,29 @@ module.exports = {
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
+      gray: {
+        50: "#f9fafb",
+        300: "#d1d5db",
+      },
     },
     extend: {
       backgroundImage: {
-        'LA': "url('../assets/images/LA.jpg')", 
-        'bali': "url('../assets/images/bali.jpg')",
-        'miami': "url('../assets/images/miami.jpg')",
-        'europe': "url('../assets/images/europe.jpg')",
-        'sydney': "url('../assets/images/sydney.jpg')",
-        'norway': "url('../assets/images/norway.jpg')",
-        'chicago': "url('../assets/images/chicago.jpg')",
-        'iceland': "url('../assets/images/iceland.jpg')",
-        'seattle': "url('../assets/images/seattle.jpg')",
-        'new_york': "url('/src/assets/images/new_york.jpg')",
-        'yosemite': "url('../assets/images/yosemite.jpg')",
-        'switzerland': "url('../assets/images/switzerland.jpg')",
-        'sanFrancisco': "url('../assets/images/sanFrancisco.jpg')",
-        'sanFranciscoDesktop': "url('../assets/images/sanFranciscoDesktop.jpg')",
+        LA: "url('../assets/images/LA.jpg')",
+        bali: "url('../assets/images/bali.jpg')",
+        miami: "url('../assets/images/miami.jpg')",
+        europe: "url('../assets/images/europe.jpg')",
+        sydney: "url('../assets/images/sydney.jpg')",
+        norway: "url('../assets/images/norway.jpg')",
+        chicago: "url('../assets/images/chicago.jpg')",
+        iceland: "url('../assets/images/iceland.jpg')",
+        seattle: "url('../assets/images/seattle.jpg')",
+        new_york: "url('/src/assets/images/new_york.jpg')",
+        yosemite: "url('../assets/images/yosemite.jpg')",
+        switzerland: "url('../assets/images/switzerland.jpg')",
+        sanFrancisco: "url('../assets/images/sanFrancisco.jpg')",
+        sanFranciscoDesktop: "url('../assets/images/sanFranciscoDesktop.jpg')",
       },
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

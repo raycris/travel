@@ -10,6 +10,7 @@ const Footer = () => {
       <p className="text-sm text-gray-300">Terms and Conditions</p>
       <p className="text-sm text-gray-300">Travel World, Inc.</p>
       <p className="text-sm text-gray-300">Follow Us </p>
+      <div className="w-full h-11"></div>
     </footer>
   );
 };

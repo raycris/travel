@@ -3,7 +3,7 @@ import React from "react";
 const TabBar = ({ id, homeId, popularRentsId, recommendedId }) => {
   return (
     <div
-      className="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8  items-center justify-center"
+      className="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8  items-center justify-center lg:hidden"
       id={id}
     >
       <a href={homeId}>

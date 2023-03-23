@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQ = ({ id }) => {
   return (
-    <section className="w-full h-auto " id={id}>
+    <section className="w-full h-auto mb-10" id={id}>
       <div className="w-full h-full px-6 flex flex-col space-y-4 ">
         <p className="text-3xl text-primary font-semibold mt-6">FAQS</p>
         <div>

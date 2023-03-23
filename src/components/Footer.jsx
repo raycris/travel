@@ -1,8 +1,8 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({id}) => {
   return (
-    <footer className="w-full h-auto bg-gray-50 p-6 space-y-2">
+    <footer className="w-full h-auto bg-gray-50 p-6 space-y-2" id={id}>
       <p className="text-lg ">About Us</p>
       <p className="text-sm text-gray-300">Investors</p>
       <p className="text-sm text-gray-300">Jobs</p>

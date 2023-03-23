@@ -6,23 +6,23 @@ import PopularRents from "./components/PopularRenst";
 import Footer from "./components/Footer";
 import TabBar from "./components/TabBar";
 import FAQ from "./components/FAQ";
-
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="font-Montserrat">
-      <nav></nav>
+      <NavBar />
 
       <section className="w-full h-screen">
         <Home id="home" />
         <Recommended id="recommended" />
-        <PopularRents id="pupular_rents" />
-        <FAQ/>
-        <Footer />
+        <PopularRents id="popular_rents" />
+        <FAQ id="faq"/>
+        <Footer id="footer"/>
         <TabBar
           id="tab_bar"
           homeId="home"
-          popularRentsId="pupular_rents"
+          popularRentsId="popular_rents"
           recommendedId="recommended"
         />
       </section>

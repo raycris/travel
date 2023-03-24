@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const TabBar = ({ id, homeId, popularRentsId, recommendedId }) => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    console.log(theme);
+    setTheme(theme === "dark"? "light": "dark")
+  }
+
   return (
     <div
-      className="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8  items-center justify-center lg:hidden"
+      className="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8  items-center justify-center lg:hidden dark:bg-gray-800"
       id={id}
     >
       <a href={homeId}>
@@ -55,7 +69,7 @@ const TabBar = ({ id, homeId, popularRentsId, recommendedId }) => {
           />
         </svg>
       </a>
-      <button>
+      <button  onClick={handleThemeSwitch}>
         <svg
           width="30"
           height="30"

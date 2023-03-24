@@ -2,32 +2,33 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       Montserrat: ['"Montserrat"', "sans-serif"],
     },
-    colors: {
-      primary: "#CC2D4A",
-      secondary: "#8FA206",
-      tertiary: "#61AEC9",
-      transparent: "transparent",
-      current: "currentColor",
-      white: "#ffffff",
-      black:"#000000",
-      purple: "#3f3cbb",
-      midnight: "#121063",
-      metal: "#565584",
-      tahiti: "#3ab7bf",
-      silver: "#ecebff",
-      "bubble-gum": "#ff77e9",
-      bermuda: "#78dcca",
-      gray: {
-        50: "#f9fafb",
-        200: "#e5e7eb",
-        300: "#d1d5db",
-      },
-    },
     extend: {
+      colors: {
+        primary: "#CC2D4A",
+        secondary: "#8FA206",
+        tertiary: "#61AEC9",
+        transparent: "transparent",
+        current: "currentColor",
+        white: "#ffffff",
+        black:"#000000",
+        purple: "#3f3cbb",
+        midnight: "#121063",
+        metal: "#565584",
+        tahiti: "#3ab7bf",
+        silver: "#ecebff",
+        "bubble-gum": "#ff77e9",
+        bermuda: "#78dcca",
+        gray: {
+          50: "#f9fafb",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+        },
+      },
       backgroundImage: {
         LA: "url('../assets/images/LA.jpg')",
         bali: "url('../assets/images/bali.jpg')",

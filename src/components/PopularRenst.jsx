@@ -10,7 +10,7 @@ const PopularRenst = ({ id }) => {
   return (
     <section>
       <div id={id} class="p-6 h-full w-full ">
-        <p class="text-3xl text-primary font-semibold">Trending Stays</p>
+        <p class="text-3xl text-primary font-semibold dark:text-white">Trending Stays</p>
         <div class="w-full h-full flex flex-col space-y-4 items-center justify-center mt-6 ">
           <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:h-[38rem] lg:text-right lg:bg-center ">
             <picture>

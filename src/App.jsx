@@ -10,7 +10,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="font-Montserrat">
+    <div className="font-Montserrat" >
       <NavBar />
 
       <section className="w-full h-screen">
